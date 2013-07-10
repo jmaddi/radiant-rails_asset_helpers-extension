@@ -1,11 +1,8 @@
-require "rails2_asset_pipeline/view_helpers"
-
-module RailsAssetPipeline::AssetTags      
+module RailsAssetHelpers::AssetTags      
   include Radiant::Taggable
   include ActionView::Helpers::TagHelper
   include ActionView::Helpers::AssetTagHelper
   include ActionView::Helpers::JavaScriptHelper
-  include Rails2AssetPipeline::ViewHelpers
   
   desc %{
     Include pipeline-based stylesheets.
