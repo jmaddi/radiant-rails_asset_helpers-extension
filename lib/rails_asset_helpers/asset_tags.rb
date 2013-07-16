@@ -36,7 +36,7 @@ module RailsAssetHelpers::AssetTags
   desc %{ Renders and image tag with asset pipeline compatibility }
   tag 'image_tag' do |tag|
    options = tag.attr || {}
-   source = options["source"]    
+   source = options["source"] || ''
    options.delete("source")        
 
    image_tag(source, options)
